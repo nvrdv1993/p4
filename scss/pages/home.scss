@@ -1,0 +1,202 @@
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #EAEAEA;
+    height: 50px;
+}
+
+.localisation p {
+    font-weight: 500;
+    color: #353535;
+}
+
+
+.presentation {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1.5rem;
+    padding: 2.5rem 1.5rem 3.5rem 2rem;
+}
+
+.presentation h1 {
+    height: 4.25rem;
+    margin-bottom: -1.5rem;
+}
+
+.presentation p {
+    height: 2.87rem;
+    margin-bottom: 0rem;
+}
+
+.presentation button {
+    border-radius: 25px;
+    border: 1px solid var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    height: 3.125rem;
+    width: 13.625rem;
+}
+
+.presentation button a {
+    text-decoration: none;
+    color: var(--White, #FFF);
+    height: 1.5rem;
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 3rem 1.25rem 4.25rem 2rem;
+}
+
+.fonctionnement p {
+    font-weight: 500;
+}
+
+
+.fonctionnement ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fonctionnement li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px; /* Espacement entre les rectangles */
+    width: 20.125rem;
+    height: 4.52rem;
+    background: var(--Background, #F6F6F6);
+    border-radius: 20px; /* Bords arrondis */
+    overflow: hidden; /* Pour s'assurer que le contenu à l'intérieur ne dépasse pas le rectangle */
+    border: 1px solid #f5f5f5; /* Bordure de 1 pixel */
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.fonctionnement li::before {
+    content: ""; /* Réinitialise le contenu par défaut */
+    position: absolute;
+    width: 1.4rem; /* Largeur du cercle */
+    height: 1.4rem; /* Hauteur du cercle */
+    border-radius: 50%; /* Pour créer un cercle */
+    background-color: #9356DC; /* Couleur du cercle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Couleur du texte à l'intérieur du cercle */
+    font-weight: 500;
+    font-size: 14px; /* Taille du texte à l'intérieur du cercle */
+    left: 21px; /* Ajustement pour le positionnement du cercle à gauche du rectangle */
+}
+
+
+.fonctionnement li:nth-child(1)::before {
+    content: "1";
+}
+
+.fonctionnement li:nth-child(2)::before {
+    content: "2";
+}
+
+.fonctionnement li:nth-child(3)::before {
+    content: "3";
+}
+
+.fonctionnement li i {
+    margin: 0 25px 0 25px; /* Espacement entre l'icône et le texte */
+}
+
+.fonctionnement li p {
+    margin: 15px 0; /* Espacement du texte à l'intérieur du rectangle */
+}
+
+.fonctionnement li:nth-child(1) i,
+.fonctionnement li:nth-child(2) i {
+    color: #7E7E7E;
+}
+
+.fonctionnement li:nth-child(3) i {
+    color: #9356DC;
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 3.5rem 1.25rem 4rem 1.25rem;
+    background-color: #F6F6F6;
+}
+
+.restaurant h2 {
+    margin-right: 1.25rem;
+}
+
+.liste_cartes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    padding: 1.10rem;
+}
+
+.carte_restaurant {
+    position: relative;
+    border-radius: 1rem;
+}
+
+.restaurants img {
+    height: 174px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.restaurants .description_carte {
+    padding: 0.75rem 0 0.25rem 0.75rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.restaurant{
+display: flex;
+flex-direction: column;
+row-gap: 1.5rem;
+padding: 3.5rem 1.25rem 4rem 1.25rem;
+}
+
+.liste_cartes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+}
+
+.carte_restaurant {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 5px 0px;
+    border-radius: 1rem;
+}
+
+.restaurant img {
+        height: 9.8rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+.description_carte {
+        padding: 0.75rem 0 0.25rem 0.75rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .restaurants {
+        h3, p {
+            color: #000; // Couleur du texte par défaut, ajustez si nécessaire
+            text-decoration: none;
+        }
+    }
+

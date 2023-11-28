@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    height: 63px;
+    padding: 14px 89px 13px 89px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+header a {
+    position: absolute;
+    left: 1rem; /* Ajustez cette valeur selon vos besoins */
+}
+
+header img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a i {
+    color: black;
+}
