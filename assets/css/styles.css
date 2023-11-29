@@ -6,6 +6,11 @@ body p {
   font-weight: 300;
 }
 
+.fonctionnement, .restaurants h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 h1 {
   font-family: "Shrikhand";
   font-size: 28px;
@@ -113,11 +118,14 @@ header {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  box-shadow: 0px 35px 50px 0px;
+  position: relative; /* Ajoutez cette ligne pour permettre le positionnement absolu de l'ombre */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 header a {
   position: absolute;
-  left: 1rem; /* Ajustez cette valeur selon vos besoins */
+  left: 1rem;
 }
 
 header img {
@@ -164,7 +172,7 @@ footer p {
   align-items: center;
   gap: 20px;
   background-color: #EAEAEA;
-  height: 50px;
+  height: 3.125rem;
 }
 
 .localisation p {
@@ -173,23 +181,18 @@ footer p {
 }
 
 .presentation {
-  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   row-gap: 1.5rem;
   padding: 2.5rem 1.5rem 3.5rem 2rem;
+  background-color: #F6F6F6;
 }
 
 .presentation h1 {
   height: 4.25rem;
   margin-bottom: -1.5rem;
-}
-
-.presentation p {
-  height: 2.87rem;
-  margin-bottom: 0rem;
 }
 
 .presentation button {
@@ -214,8 +217,12 @@ footer p {
   padding: 3rem 1.25rem 4.25rem 2rem;
 }
 
-.fonctionnement p {
+.fonctionnement p { /**/
   font-weight: 500;
+}
+
+.fonctionnement h2 {
+  margin-right: 2rem;
 }
 
 .fonctionnement ol {
@@ -227,13 +234,13 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 25px; /* Espacement entre les rectangles */
+  margin-bottom: 1.56rem;
   width: 20.125rem;
   height: 4.52rem;
   background: var(--Background, #F6F6F6);
-  border-radius: 20px; /* Bords arrondis */
+  border-radius: 20px;
   overflow: hidden; /* Pour s'assurer que le contenu à l'intérieur ne dépasse pas le rectangle */
-  border: 1px solid #f5f5f5; /* Bordure de 1 pixel */
+  border: 1px solid #f5f5f5;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -243,14 +250,14 @@ footer p {
   width: 1.4rem; /* Largeur du cercle */
   height: 1.4rem; /* Hauteur du cercle */
   border-radius: 50%; /* Pour créer un cercle */
-  background-color: #9356DC; /* Couleur du cercle */
+  background-color: #9356DC;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Couleur du texte à l'intérieur du cercle */
+  color: white;
   font-weight: 500;
-  font-size: 14px; /* Taille du texte à l'intérieur du cercle */
-  left: 21px; /* Ajustement pour le positionnement du cercle à gauche du rectangle */
+  font-size: 14px;
+  left: 21px;
 }
 
 .fonctionnement li:nth-child(1)::before {
@@ -290,41 +297,6 @@ footer p {
   background-color: #F6F6F6;
 }
 
-.restaurant h2 {
-  margin-right: 1.25rem;
-}
-
-.liste_cartes {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.25rem;
-  padding: 1.1rem;
-}
-
-.carte_restaurant {
-  position: relative;
-  border-radius: 1rem;
-}
-
-.restaurants img {
-  height: 174px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
-}
-
-.restaurants .description_carte {
-  padding: 0.75rem 0 0.25rem 0.75rem;
-  border-radius: 0 0 1rem 1rem;
-}
-
-.restaurant {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
-  padding: 3.5rem 1.25rem 4rem 1.25rem;
-}
-
 .liste_cartes {
   display: flex;
   flex-direction: column;
@@ -334,25 +306,54 @@ footer p {
 .carte_restaurant {
   position: relative;
   border-radius: 1rem;
-  box-shadow: 0px 4px 5px 0px;
+  background: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
 }
 
-.restaurant img {
-  height: 9.8rem;
+.carte_restaurant img {
+  height: 10rem;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
+}
+
+.carte_restaurant a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
 }
 
 .description_carte {
-  padding: 0.75rem 0 0.25rem 0.75rem;
-  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.restaurants h3, .restaurants p {
-  color: #000;
-  text-decoration: none;
+.description_carte h3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.75rem;
+}
+
+.description_carte p {
+  padding-left: 0.75rem;
+}
+
+.logo_coeur {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.restaurants .liste_cartes .carte_restaurant.nouveau::after {
+  content: "Nouveau";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 0.25rem 0.5rem;
+  font-family: "Roboto";
 }
 
 main img {
@@ -380,11 +381,9 @@ main img {
 }
 
 .conteneur_coeur h1 {
-  font-size: 1.75rem; /* Taille du titre h1 (ajuste la valeur selon tes besoins) */
-  /* Autres styles que tu souhaites appliquer à h1 */
+  font-size: 1.75rem;
   overflow: hidden; /* Évite que le texte dépasse du conteneur */
   white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
-  margin: 0; /* Pour enlever la marge par défaut du h1 */
 }
 
 .section_menu {
@@ -394,12 +393,14 @@ main img {
   width: 100%;
 }
 
-h3::after {
+.section_menu h2::after {
+  content: ""; /* Ajoutez cette ligne pour que ::after génère un contenu */
+  display: block;
   display: block;
   width: 2.5rem;
   height: 3px;
   background: #99E2D0;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .intitule_plat {
@@ -409,13 +410,11 @@ h3::after {
   width: 21.5rem;
   height: 4.5rem;
   background: var(--Background, #F6F6F6);
-  border-radius: 20px; /* Bords arrondis */
+  border-radius: 20px;
   overflow: hidden; /* Pour s'assurer que le contenu à l'intérieur ne dépasse pas le rectangle */
-  border: 1px solid #f5f5f5; /* Bordure de 1 pixel */
+  border: 1px solid #f5f5f5;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  overflow: hidden; /* Évite que le texte dépasse du conteneur */
-  white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
-  overflow: hidden; /* Évite que le texte dépasse du conteneur */
+  overflow: hidden;
   white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
 }
 
@@ -425,7 +424,7 @@ h3::after {
 }
 
 .intitule_plat h3 {
-  margin-bottom: 0.31rem; /* Espacement entre le h3 et le p */
+  margin-bottom: 0.31rem;
 }
 
 button {

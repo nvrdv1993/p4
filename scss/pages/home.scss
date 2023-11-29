@@ -4,33 +4,27 @@
     align-items: center;
     gap: 20px;
     background-color: #EAEAEA;
-    height: 50px;
+    height: 3.125rem;
 }
 
 .localisation p {
     font-weight: 500;
-    color: #353535;
+    color:#353535;
 }
 
-
 .presentation {
-    background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     row-gap: 1.5rem;
     padding: 2.5rem 1.5rem 3.5rem 2rem;
+    background-color: #F6F6F6;
 }
 
 .presentation h1 {
     height: 4.25rem;
     margin-bottom: -1.5rem;
-}
-
-.presentation p {
-    height: 2.87rem;
-    margin-bottom: 0rem;
 }
 
 .presentation button {
@@ -55,10 +49,13 @@
     padding: 3rem 1.25rem 4.25rem 2rem;
 }
 
-.fonctionnement p {
+.fonctionnement p { /**/
     font-weight: 500;
 }
 
+.fonctionnement h2 {
+    margin-right: 2rem;
+}
 
 .fonctionnement ol {
     list-style-type: none;
@@ -69,13 +66,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 25px; /* Espacement entre les rectangles */
+    margin-bottom: 1.56rem;
     width: 20.125rem;
     height: 4.52rem;
     background: var(--Background, #F6F6F6);
-    border-radius: 20px; /* Bords arrondis */
+    border-radius: 20px; 
     overflow: hidden; /* Pour s'assurer que le contenu à l'intérieur ne dépasse pas le rectangle */
-    border: 1px solid #f5f5f5; /* Bordure de 1 pixel */
+    border: 1px solid #f5f5f5; 
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -85,14 +82,14 @@
     width: 1.4rem; /* Largeur du cercle */
     height: 1.4rem; /* Hauteur du cercle */
     border-radius: 50%; /* Pour créer un cercle */
-    background-color: #9356DC; /* Couleur du cercle */
+    background-color: #9356DC; 
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; /* Couleur du texte à l'intérieur du cercle */
+    color: white; 
     font-weight: 500;
-    font-size: 14px; /* Taille du texte à l'intérieur du cercle */
-    left: 21px; /* Ajustement pour le positionnement du cercle à gauche du rectangle */
+    font-size: 14px; 
+    left: 21px; 
 }
 
 
@@ -133,70 +130,62 @@
     background-color: #F6F6F6;
 }
 
-.restaurant h2 {
-    margin-right: 1.25rem;
-}
-
 .liste_cartes {
     display: flex;
     flex-direction: column;
     row-gap: 1.25rem;
-    padding: 1.10rem;
 }
 
 .carte_restaurant {
     position: relative;
     border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 1rem;  
 }
 
-.restaurants img {
-    height: 174px;
+.carte_restaurant img {
+    height: 10rem;
     width: 100%;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem 1rem 0 0; 
 }
 
-.restaurants .description_carte {
-    padding: 0.75rem 0 0.25rem 0.75rem;
-    border-radius: 0 0 1rem 1rem;
-}
-
-.restaurant{
-display: flex;
-flex-direction: column;
-row-gap: 1.5rem;
-padding: 3.5rem 1.25rem 4rem 1.25rem;
-}
-
-.liste_cartes {
-    display: flex;
+.carte_restaurant a {
+    text-decoration: none;
+    color: inherit;
+    display: flex; 
     flex-direction: column;
-    row-gap: 1.25rem;
 }
-
-.carte_restaurant {
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 5px 0px;
-    border-radius: 1rem;
-}
-
-.restaurant img {
-        height: 9.8rem;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
-    }
 
 .description_carte {
-        padding: 0.75rem 0 0.25rem 0.75rem;
-        border-radius: 0 0 1rem 1rem;
-    }
+    display: flex;
+    flex-direction: column;
+}
 
-    .restaurants {
-        h3, p {
-            color: #000; // Couleur du texte par défaut, ajustez si nécessaire
-            text-decoration: none;
-        }
-    }
+.description_carte h3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.75rem;
+}
 
+.description_carte p {
+    padding-left: 0.75rem;
+}
+
+.logo_coeur {
+    display: flex;
+    justify-content: flex-end; 
+    
+}
+
+.restaurants .liste_cartes .carte_restaurant.nouveau::after {
+    content: "Nouveau";
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 0.25rem 0.5rem;
+    font-family: $primary-font;
+}
