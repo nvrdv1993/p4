@@ -1,25 +1,25 @@
 header {
     display: flex;
-    height: 63px;
-    padding: 14px 89px 13px 89px;
+    height: 3.93rem;
+    padding: 1.5rem 5.56rem 1.5rem 5.56rem;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    box-shadow: 0px 35px 50px 0px;
-    position: relative; /* Ajoutez cette ligne pour permettre le positionnement absolu de l'ombre */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); 
-}
-
-header a {
-    position: absolute;
-    left: 1rem; 
-}
-
-header img {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header a i {
-    color: black;
-}
+    position: relative; // Ajoutez cette ligne pour permettre le positionnement absolu de l'ombre
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  
+    a {
+      position: absolute;
+      left: 1rem;
+    }
+  
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    a i {
+      color: black;
+    }
+  }
+  

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Font-size*/
 body p {
   font-size: 16px;
@@ -111,70 +110,119 @@ ol, ul {
   list-style: none;
 }
 
+.presentation button {
+  border-radius: 25px;
+  border: 1px solid var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  height: 3.125rem;
+  width: 13.625rem;
+}
+.presentation button a {
+  text-decoration: none;
+  color: var(--White, #FFF);
+  height: 1.5rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  height: 3.125rem;
+  width: 11.625rem;
+}
+button p {
+  text-decoration: none;
+  color: var(--White, #FFF);
+  height: 1.5rem;
+  font-weight: 400;
+}
+
 header {
   display: flex;
-  height: 63px;
-  padding: 14px 89px 13px 89px;
+  height: 3.93rem;
+  padding: 1.5rem 5.56rem 1.5rem 5.56rem;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  box-shadow: 0px 35px 50px 0px;
-  position: relative; /* Ajoutez cette ligne pour permettre le positionnement absolu de l'ombre */
+  position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
-
 header a {
   position: absolute;
   left: 1rem;
 }
-
 header img {
   margin-left: auto;
   margin-right: auto;
 }
-
 header a i {
   color: black;
 }
 
 footer {
   display: flex;
-  padding: 22px 25px;
+  padding: 1.375rem 1.56rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 2rem;
   background-color: #353535;
 }
-
 footer img {
   filter: invert(100%);
   height: 1.3rem;
 }
-
 footer li {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 0.438rem;
   line-height: 1.5;
 }
-
-footer i {
-  color: white;
+footer i, footer p, footer a {
+  color: #F6F6F6;
+}
+footer a {
+  text-decoration: none;
 }
 
-footer p {
-  color: #FFF;
+@media (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 5rem;
+    padding: 0 7rem 0 0;
+    height: 7.125rem;
+  }
+  footer ul {
+    display: flex;
+    transform: translateY(3.5rem);
+    margin-left: 10rem;
+  }
+  footer li {
+    row-gap: 1rem;
+    margin-right: 1rem;
+  }
+  footer img {
+    transform: translateY(3.5rem);
+    margin-right: -4rem;
+  }
+  footer span {
+    padding: 2rem;
+  }
 }
-
 .localisation {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   background-color: #EAEAEA;
   height: 3.125rem;
+  padding-right: 1rem;
 }
-
 .localisation p {
   font-weight: 500;
   color: #353535;
@@ -189,25 +237,9 @@ footer p {
   padding: 2.5rem 1.5rem 3.5rem 2rem;
   background-color: #F6F6F6;
 }
-
 .presentation h1 {
   height: 4.25rem;
   margin-bottom: -1.5rem;
-}
-
-.presentation button {
-  border-radius: 25px;
-  border: 1px solid var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  height: 3.125rem;
-  width: 13.625rem;
-}
-
-.presentation button a {
-  text-decoration: none;
-  color: var(--White, #FFF);
-  height: 1.5rem;
 }
 
 .fonctionnement {
@@ -216,77 +248,77 @@ footer p {
   row-gap: 1.5rem;
   padding: 3rem 1.25rem 4.25rem 2rem;
 }
-
-.fonctionnement p { /**/
-  font-weight: 500;
-}
-
 .fonctionnement h2 {
   margin-right: 2rem;
 }
-
 .fonctionnement ol {
-  list-style-type: none;
-  padding: 0;
-}
-
-.fonctionnement li {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+.fonctionnement ol li {
+  display: flex;
+  align-items: center;
   margin-bottom: 1.56rem;
-  width: 20.125rem;
+  width: 95%;
   height: 4.52rem;
   background: var(--Background, #F6F6F6);
   border-radius: 20px;
-  overflow: hidden; /* Pour s'assurer que le contenu à l'intérieur ne dépasse pas le rectangle */
-  border: 1px solid #f5f5f5;
+  overflow: hidden;
+  border: 1px solid #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-
-.fonctionnement li::before {
-  content: ""; /* Réinitialise le contenu par défaut */
+.fonctionnement ol li::before {
+  content: "";
   position: absolute;
-  width: 1.4rem; /* Largeur du cercle */
-  height: 1.4rem; /* Hauteur du cercle */
-  border-radius: 50%; /* Pour créer un cercle */
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
   background-color: #9356DC;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #F6F6F6;
   font-weight: 500;
   font-size: 14px;
-  left: 21px;
+  margin-left: -0.75rem;
 }
-
-.fonctionnement li:nth-child(1)::before {
+.fonctionnement ol li:nth-child(1)::before {
   content: "1";
 }
-
-.fonctionnement li:nth-child(2)::before {
+.fonctionnement ol li:nth-child(2)::before {
   content: "2";
 }
-
-.fonctionnement li:nth-child(3)::before {
+.fonctionnement ol li:nth-child(3)::before {
   content: "3";
 }
-
-.fonctionnement li i {
-  margin: 0 25px 0 25px; /* Espacement entre l'icône et le texte */
+.fonctionnement ol li i {
+  margin: 0 1.56rem 0 1.56rem;
 }
-
-.fonctionnement li p {
-  margin: 15px 0; /* Espacement du texte à l'intérieur du rectangle */
+.fonctionnement ol li p {
+  margin: 0.93rem 0;
 }
-
-.fonctionnement li:nth-child(1) i,
-.fonctionnement li:nth-child(2) i {
+.fonctionnement ol li:nth-child(1) i, .fonctionnement ol li:nth-child(2) i {
   color: #7E7E7E;
 }
-
-.fonctionnement li:nth-child(3) i {
+.fonctionnement ol li:nth-child(3) i {
   color: #9356DC;
+}
+.fonctionnement p {
+  font-weight: 500;
+}
+
+.fonctionnement span {
+  padding-left: 0.4rem;
+}
+
+.restaurant__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .restaurants {
@@ -308,16 +340,13 @@ footer p {
   border-radius: 1rem;
   background: #FFF;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
 }
-
 .carte_restaurant img {
   height: 10rem;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
-
 .carte_restaurant a {
   text-decoration: none;
   color: inherit;
@@ -329,13 +358,11 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-
 .description_carte h3 {
   padding-top: 0.75rem;
   padding-bottom: 0.4rem;
   padding-left: 0.75rem;
 }
-
 .description_carte p {
   padding-left: 0.75rem;
 }
@@ -356,6 +383,33 @@ footer p {
   font-family: "Roboto";
 }
 
+/*Media query*/
+@media (min-width: 992px) {
+  .presentation h1 {
+    font-size: 40px;
+  }
+  .fonctionnement {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .fonctionnement ol {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .fonctionnement ol li {
+    width: 80%;
+  }
+  .restaurants {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .liste_cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6.25rem;
+    grid-row-gap: 3.12rem;
+  }
+}
 main img {
   height: 17.18rem;
   width: 100%;
@@ -365,7 +419,7 @@ main img {
 .menu {
   position: relative;
   margin-top: -3.5rem;
-  border-radius: 2.5rem 2.5rem 0px 0px;
+  border-radius: 2.5rem 2.5rem 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -379,11 +433,10 @@ main img {
   justify-content: space-between;
   width: 21.3125rem;
 }
-
 .conteneur_coeur h1 {
-  font-size: 1.75rem;
-  overflow: hidden; /* Évite que le texte dépasse du conteneur */
-  white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
+  font-size: 1.65rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .section_menu {
@@ -392,13 +445,11 @@ main img {
   row-gap: 0.75rem;
   width: 100%;
 }
-
 .section_menu h2::after {
-  content: ""; /* Ajoutez cette ligne pour que ::after génère un contenu */
-  display: block;
+  content: "";
   display: block;
   width: 2.5rem;
-  height: 3px;
+  height: 0.188rem;
   background: #99E2D0;
   margin-top: 0.5rem;
 }
@@ -407,43 +458,41 @@ main img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 21.5rem;
+  width: 100%;
   height: 4.5rem;
   background: var(--Background, #F6F6F6);
   border-radius: 20px;
-  overflow: hidden; /* Pour s'assurer que le contenu à l'intérieur ne dépasse pas le rectangle */
-  border: 1px solid #f5f5f5;
+  overflow: hidden;
+  border: 1px solid #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
+  white-space: nowrap;
+  align-self: center;
 }
-
 .intitule_plat span {
   margin-left: auto;
   margin-top: 1.87rem;
 }
-
 .intitule_plat h3 {
-  margin-bottom: 0.31rem;
+  margin-bottom: 0.15rem;
+}
+.intitule_plat p {
+  margin-bottom: 0.5rem;
 }
 
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  border: 1px solid var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  height: 3.125rem;
-  width: 11.625rem;
-}
-
-button p {
-  text-decoration: none;
-  color: var(--White, #FFF);
-  height: 1.5rem;
-  font-weight: 400;
+/*Media query*/
+@media (min-width: 992px) {
+  .menu {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .section_menu {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
