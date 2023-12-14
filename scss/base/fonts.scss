@@ -4,25 +4,20 @@ $secondary-font: "Shrikhand";
 /*Font-size*/
 
 body p {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: $primary-font;
     font-weight: 300;
 }
 
-.homepage{
-
-    
-   
-}
-
-.fonctionnement, .restaurants h2 {
+.fonctionnement,
+.restaurants h2 {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 h1 {
     font-family: $secondary-font;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -40,7 +35,7 @@ h3 {
     font-weight: 700;
 }
 
-p{
+p {
     font-family: $primary-font;
     font-size: 17px;
     font-weight: 300;
@@ -52,6 +47,7 @@ p{
     font-size: 24px;
     font-weight: 700;
 }
+
 .presentation p {
     font-family: $primary-font;
     font-weight: 300;

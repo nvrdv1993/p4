@@ -1,33 +1,57 @@
+/*Bouton Homepage*/
+
 .presentation button {
     border-radius: 25px;
-    border: 1px solid var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    border: 0px solid;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     height: 3.125rem;
     width: 13.625rem;
-    
-    a {
-    text-decoration: none;
-    color: var(--White, #FFF);
-    height: 1.5rem;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    }
+
+    span {
+        text-decoration: none;
+        color: var(--White, #FFF);
+        height: 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
 }
-}
+
+/*Bouton Restaurants*/
 
 button {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    border: 1px solid var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    border: 0px solid #9356DC;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     height: 3.125rem;
     width: 11.625rem;
-    
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    }
+
     p {
-    text-decoration: none;
-    color: var(--White, #FFF);
-    height: 1.5rem;
-    font-weight: 400;
+        text-decoration: none;
+        color: var(--White, #FFF);
+        height: 1.5rem;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
 }
+
+button a {
+    text-decoration: none;
 }

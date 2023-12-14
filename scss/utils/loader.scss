@@ -1,0 +1,55 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  animation: fade-out 5s forwards, bounce 5s infinite alternate;
+  z-index: 1;
+}
+
+.c1,
+.c2,
+.c3 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4px;
+  margin: 0 2rem;
+}
+
+.c1 {
+  background-color: $primary-color;
+}
+
+.c2 {
+  background-color: $secondary-color;
+}
+
+.c3 {
+  background-color: $tertiary-color;
+}
+
+.loader:only-child {
+  filter: blur(5px);
+  animation: blur-animation 6s forwards;
+}
+
+
+
+.c1 {
+  animation: bounce 0.5s infinite alternate;
+}
+
+.c2 {
+  animation: bounce 0.5s 0.1s infinite alternate;
+}
+
+.c3 {
+  animation: bounce 0.5s 0.2s infinite alternate;
+}
+

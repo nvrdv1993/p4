@@ -1,222 +1,261 @@
-.localisation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    background-color: #EAEAEA;
-    height: 3.125rem;
-    padding-right: 1rem;
+/*Localisation*/
 
-    p {
-        font-weight: 500;
-        color: #353535;
-    }
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: #EAEAEA;
+  height: 3.125rem;
+  padding-right: 1rem;
+
+  p {
+    font-weight: 500;
+    color: #353535;
+  }
 }
+
+/*Presentation*/
 
 .presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    row-gap: 1.5rem;
-    padding: 2.5rem 1.5rem 3.5rem 2rem;
-    background-color: $quaternary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 1.5rem;
+  padding: 2.5rem 1.5rem 3.5rem 2rem;
+  background-color: $quaternary-color;
 
-    h1 {
-        height: 4.25rem;
-        margin-bottom: -1.5rem;
-    }
+  h1 {
+    height: 4.25rem;
+    margin-bottom: -1.5rem;
+  }
 }
 
+/*Fonctionnement*/
+
 .fonctionnement {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  padding: 3rem 1.25rem 4.25rem 2rem;
+
+  h2 {
+    margin-right: 2rem;
+  }
+
+  ol {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    row-gap: 1.5rem;
-    padding: 3rem 1.25rem 4.25rem 2rem;
-  
-    h2 {
-      margin-right: 2rem;
-    }
-  
-    ol {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+
+    li {
       display: flex;
       align-items: center;
-      flex-direction: column;
-      list-style-type: none;
-      width: 100%;
-      padding: 0;
-  
-      li {
+      margin-bottom: 1.56rem;
+      width: 95%;
+      height: 4.52rem;
+      background: var(--Background, $quaternary-color);
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid $quaternary-color;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        background-color: $primary-color;
         display: flex;
         align-items: center;
-        margin-bottom: 1.56rem;
-        width: 95%;
-        height: 4.52rem;
-        background: var(--Background, $quaternary-color);
-        border-radius: 20px;
-        overflow: hidden;
-        border: 1px solid $quaternary-color;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  
-        &::before {
-          content: "";
-          position: absolute;
-          width: 1.4rem;
-          height: 1.4rem;
-          border-radius: 50%;
-          background-color: $primary-color;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: $quaternary-color;
-          font-weight: 500;
-          font-size: 14px;
-          margin-left: -0.75rem;
-        }
-  
-        &:nth-child(1)::before {
-          content: "1";
-        }
-  
-        &:nth-child(2)::before {
-          content: "2";
-        }
-  
-        &:nth-child(3)::before {
-          content: "3";
-        }
-  
-        i {
-          margin: 0 1.56rem 0 1.56rem;
-        }
-  
-        p {
-          margin: 0.93rem 0;
-        }
-  
-        &:nth-child(1) i,
-        &:nth-child(2) i {
-          color: #7E7E7E;
-        }
-  
-        &:nth-child(3) i {
-          color: $primary-color;
-        }
+        justify-content: center;
+        color: $quaternary-color;
+        font-weight: 500;
+        font-size: 0.875rem;
+        margin-left: -0.75rem;
       }
-    }
-  
-    p {
-      font-weight: 500;
+
+      &:nth-child(1)::before {
+        content: "1";
+      }
+
+      &:nth-child(2)::before {
+        content: "2";
+      }
+
+      &:nth-child(3)::before {
+        content: "3";
+      }
+
+      i {
+        margin: 0 1.56rem 0 1.56rem;
+      }
+
+      p {
+        margin: 0.93rem 0;
+      }
+
+      &:nth-child(1) i,
+      &:nth-child(2) i {
+        color: #7E7E7E;
+      }
+
+      &:nth-child(3) i {
+        color: $primary-color;
+      }
     }
   }
 
-.fonctionnement span {
-    padding-left: 0.4rem;
+  p {
+    font-weight: 500;
+  }
 }
 
-.restaurant__container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.fonctionnement span {
+  padding-left: 0.4rem;
 }
+
+/*Restaurants*/
+
 .restaurants {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-    padding: 3.5rem 1.25rem 4rem 1.25rem;
-    background-color: $quaternary-color;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  padding: 3.5rem 1.25rem 4rem 1.25rem;
+  background-color: $quaternary-color;
 }
 
 .liste_cartes {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
 }
 
 .carte_restaurant {
-    position: relative;
-    border-radius: 1rem;
-    background: #FFF;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+  position: relative;
+  border-radius: 1rem;
+  background: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
 
-    img {
-        height: 10rem;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
-    }
+  img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-        display: flex;
-        flex-direction: column;
-    }
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .description_carte {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    h3 {
-        padding-top: 0.75rem;
-        padding-bottom: 0.4rem;
-        padding-left: 0.75rem;
-    }
+  h3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.75rem;
+  }
 
-    p {
-        padding-left: 0.75rem;
-    }
-}
-
-.logo_coeur {
-    display: flex;
-    justify-content: flex-end;
-
+  p {
+    padding-left: 0.75rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .restaurants .liste_cartes .carte_restaurant.nouveau::after {
-    content: "Nouveau";
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background-color: $tertiary-color;
-    color: #008766;
-    padding: 0.25rem 0.5rem;
-    font-family: $primary-font;
+  content: "Nouveau";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: $tertiary-color;
+  color: #008766;
+  padding: 0.25rem 0.5rem;
+  font-family: $primary-font;
+}
+
+/*Coeur*/
+
+.conteneur_coeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 21.3125rem;
+  position: absolute;
+  bottom: 14%;
+  left: 90%;
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:not(:checked)+.i-coeur i {
+      animation: none;
+    }
+  }
+}
+
+.i-coeur i {
+  font-size: 1.375rem;
+  -webkit-background-clip: text;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: color 500ms cubic-bezier(0.55, 1.2, 0.93, 1);
+  padding-right: 1.25rem;
+}
+
+input[type="checkbox"]:checked ~ i {
+  background: linear-gradient(176deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 1.375rem;
+  border: 1px solid transparent;
+  animation: remplissage 300ms forwards;
+  transform-origin: bottom;
 }
 
 /*Media query*/
 
 @media (min-width: 992px) {
-    
-    .presentation h1 {
-        font-size: 40px;
-    }
 
-    .fonctionnement {
-        padding-left: 10rem;
-        padding-right: 10rem;
-      
-        ol {
-          flex-direction: row;
-          gap: 2rem;
-      
-          li {
-            width: 80%;
-          }
-        }
+  .presentation h1 {
+    font-size: 2.5rem;
+  }
+
+  .fonctionnement {
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    ol {
+      flex-direction: row;
+      gap: 2rem;
+
+      li {
+        width: 80%;
       }
-      
-      .restaurants{
-        padding-left: 10rem; 
-        padding-right: 10rem; 
-      }
-         
-    .liste_cartes {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 6.25rem;
-        grid-row-gap: 3.12rem;
     }
+  }
+
+  .restaurants {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .liste_cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6.25rem;
+    grid-row-gap: 3.12rem;
+  }
 }

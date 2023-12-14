@@ -13,7 +13,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../assets/css/styles.css" rel="stylesheet">
-    <title>À la française</title>
+    <title>Le délice des sens</title>
 </head>
 
 <body>
@@ -22,21 +22,25 @@
         <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
     </header>
     <main>
-        <img src="../assets/images/restaurants/A la française.jpg" alt="Photo du restaurant A la française">
+        <img src="../assets/images/restaurants/Le-delice-des-sens.jpg" alt="Photo du restaurant Le délice des sens">
         <section class="menu">
-            <div class="conteneur_coeur">
-                <h1>À la française</h1>
-                <i class="fa-regular fa-heart coeur_vide fa-xl"></i>
-                <i class="fa-solid fa-heart coeur_plein fa-xl"></i>
+            <div class="titre-coeur">
+                <div class="conteneur_coeur_restaurant">
+                    <h1>Le délice des sens</h1>
+                    <label class="i-coeur" for="coeurCheckbox1">
+                        <input type="checkbox" id="coeurCheckbox1">
+                        <i class="fa-regular fa-heart coeur_vide"></i>
+                    </label>
+                </div>
             </div>
 
-            <div class="section_menu">
+            <div class="section_menu" data-order="1">
                 <h2>ENTRÉES</h2>
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zestes d'orange</p>
+                        <h3>Tartare de thon</h3>
+                        <p>Assaisonné au yuzu</p>
                     </div>
                     <span>25€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
@@ -44,8 +48,8 @@
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Velouté de légumes d'antan</h3>
-                        <p>Carotte, panais, topinambour</p>
+                        <h3>Bouchée de homard croustillant </h3>
+                        <p>Et sa farandole de petits légumes</p>
                     </div>
                     <span>35€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
@@ -53,21 +57,21 @@
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Soupe à l'oignon</h3>
-                        <p>Revisitée</p>
+                        <h3>Poulet rôti aux herbes de Provence </h3>
+                        <p>Et sa crème de truffe</p>
                     </div>
-                    <span>20€</span>
+                    <span>40€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
                 </article>
             </div>
 
-            <div class="section_menu">
+            <div class="section_menu" data-order="2">
                 <h2>PLATS</h2>
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Coquilles Saint-Jacques</h3>
-                        <p>Accompagnées d'une purée de panais</p>
+                        <h3>Poulet rôti aux herbes de Provence </h3>
+                        <p>Et sa crème de truffe</p>
                     </div>
                     <span>40€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
@@ -75,8 +79,8 @@
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Magret de canard</h3>
-                        <p>Et parmentier de pommes de terre</p>
+                        <h3>Langouste rôtie </h3>
+                        <p>Et ses légumes de saison</p>
                     </div>
                     <span>35€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
@@ -84,21 +88,21 @@
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                        <p>Sur son lit de gnocchis aux légumes</p>
+                        <h3>Côte de bœuf Angus </h3>
+                        <p>Et sa purée de panais</p>
                     </div>
                     <span>44€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
                 </article>
             </div>
 
-            <div class="section_menu">
+            <div class="section_menu" data-order="3">
                 <h2>DESSERTS</h2>
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Pétales de violettes glacés</h3>
-                        <p>Et purée de noisettes</p>
+                        <h3>Farandole de desserts</h3>
+                        <p>Du chef</p>
                     </div>
                     <span>18€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
@@ -106,8 +110,8 @@
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Fondant au chocolat</h3>
-                        <p>Revisité</p>
+                        <h3>Crème brulée </h3>
+                        <p>Revisitée</p>
                     </div>
                     <span>22€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
@@ -115,14 +119,16 @@
 
                 <article class="intitule_plat">
                     <div class="description_carte">
-                        <h3>Millefeuille croustillant</h3>
-                        <p>Myrtilles et pâte d’amande</p>
+                        <h3>Tiramisu</h3>
+                        <p>À la noisette</p>
                     </div>
                     <span>23€</span>
                     <div class="check"><i class="fa-solid fa-check"></i></div>
                 </article>
             </div>
-            <button class="commander"><p>Commander</p></button>
+            <button class="commander">
+                <p>Commander</p>
+            </button>
         </section>
     </main>
     <footer>
