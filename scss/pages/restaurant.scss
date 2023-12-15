@@ -150,10 +150,10 @@ input[type="checkbox"] {
   }
 }
 
-
 /*Media query*/
 
 @media (min-width: 992px) {
+  
   .menu {
     justify-content: center;
     align-items: center;
@@ -175,4 +175,5 @@ input[type="checkbox"] {
     padding-left: 10rem;
     padding-right: 10rem;
   }
+}
 }
