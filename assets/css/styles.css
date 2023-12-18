@@ -124,7 +124,7 @@ ol, ul {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
-.presentation button span {
+.presentation button #spanA {
   text-decoration: none;
   color: var(--White, #FFF);
   height: 1.5rem;
@@ -550,18 +550,10 @@ input[type=checkbox]:not(:checked) + .i-coeur i {
   align-self: center;
   overflow: hidden;
   background-color: white;
-  /*Media query*/
 }
 .intitule_plat .description_carte {
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.intitule_plat .description_carte span {
-  margin-left: auto;
-  margin-right: 1rem;
-  margin-top: 1.4rem;
-  font-weight: 700;
-  transition: transform 0.6s ease-in-out;
 }
 .intitule_plat .description_carte h3 {
   margin-top: 0.5rem;
@@ -575,7 +567,15 @@ input[type=checkbox]:not(:checked) + .i-coeur i {
   white-space: nowrap;
   overflow: hidden;
 }
-.intitule_plat .check {
+.intitule_plat span {
+  margin-left: auto;
+  margin-right: 1rem;
+  margin-top: 1.4rem;
+  font-weight: 700;
+  transition: transform 0.6s ease-in-out;
+}
+
+.check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -588,38 +588,39 @@ input[type=checkbox]:not(:checked) + .i-coeur i {
   opacity: 0;
   text-overflow: ellipsis;
 }
-.intitule_plat .check i {
+.check i {
   color: #99E2D0;
   background-color: white;
   border-radius: 50%;
   font-size: 0.75rem;
   padding: 0.2rem;
 }
-.intitule_plat:hover .intitule_plat .check {
+.intitule_plat:hover .check {
   margin-right: 0;
   opacity: 1;
 }
+
+/*Media query*/
 @media (min-width: 992px) {
-  .intitule_plat .menu {
+  .menu {
     justify-content: center;
     align-items: center;
     padding-bottom: 2.5rem;
     width: 70%;
     margin-left: 15%;
   }
-  .intitule_plat .conteneur_coeur_restaurant {
+  .conteneur_coeur_restaurant {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     gap: 30px;
   }
-  .intitule_plat .section_menu {
+  .section_menu {
     padding-left: 10rem;
     padding-right: 10rem;
   }
 }
-
 /*Loader*/
 @keyframes fade-out {
   from {
