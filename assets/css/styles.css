@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Font-size*/
 body p {
   font-size: 1rem;
@@ -404,7 +405,6 @@ footer a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 21.3125rem;
   position: absolute;
   bottom: 14%;
   left: 90%;
@@ -462,6 +462,9 @@ input[type=checkbox]:checked ~ i {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 6.25rem;
     grid-row-gap: 3.12rem;
+  }
+  .carte_restaurant img {
+    height: 13rem;
   }
 }
 /*Animation menu*/
@@ -628,7 +631,7 @@ input[type=checkbox]:not(:checked) + .i-coeur i {
   }
   to {
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; /*Ne réagit pas aux événements de pointage*/
   }
 }
 @keyframes bounce {

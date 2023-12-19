@@ -190,7 +190,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 21.3125rem;
   position: absolute;
   bottom: 14%;
   left: 90%;
@@ -258,4 +257,9 @@ input[type="checkbox"]:checked ~ i {
     grid-column-gap: 6.25rem;
     grid-row-gap: 3.12rem;
   }
+
+.carte_restaurant img {
+  height: 13rem;
+} 
+
 }
